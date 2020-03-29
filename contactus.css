@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(theatre.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-info {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+#card {
+background:black;
+padding: 0 20px;
+margin: 0 10px;
+width: 290px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+cursor: pointer;
+
+}
+.card-icon{
+    font-size: 40px;
+    background: teal;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+#card:hover .card-icon {
+    background: none;
+    color: slateblue;
+}
+#card p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:800px) {
+    #contact-info{
+        flex-direction: column;
+        
+    }
+
+#card {
+    margin: 10px 0;
+}
+}
