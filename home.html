@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <head>
     <meta name="viewport"
     content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" href="home.css">
@@ -7,7 +8,8 @@
     <script src="https://fontawesome.com/kits/552bfe56d5/use"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/552bfe56d5.js" crossorigin="anonymous"></script>
-<head>
+<script src="home.js">
+</script>
 <title></title>
 </head>
 
@@ -22,11 +24,13 @@
             <div class="sidebar">
             <header><strong>MOB</strong></header>
                 <ul>
-                    <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
                     <li><a href="welcome.html"><i class="fas fa-door-open"></i>Welcome</a></li>
+                    <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
                     <li><a href="about.html"><i class="fas fa-address-card"></i>About</a></li>
                     <li><a href="contactus.html"><i class="fas fa-address-book"></i>Contact Us</a></li>
-                    <li><a href="discover.html"></i>Discover</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i>Profile</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>Cart</a></li>
+
                 </ul>
                 
                     <li id="links">
@@ -44,9 +48,181 @@
             </div>
             
             </div>
-        </div>
-        
-</div>
+   </div>
 
+            <form  id="search-bar">
+            <input  class="search-txt" type="text" name="box" placeholder="Type to search">
+                <a id="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </form>
+           <div class="movies">
+            <ul class="movie-list">
+
+            <div class="movie-genre">
+               
+                <h1>HORROR</h1>
+                
+                <div id="movie-item">
+                    <li>
+                        <span class="movie-title"><h4>Ready or not</h4></span>
+                    </li>
+                <img id="img-poster" src="https://i.pinimg.com/564x/c8/2a/a7/c82aa792f92d9a980edd6ca366ea5384.jpg" alt="ready or not movie poster">
+                <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-comment"></i></a>
+                    </div>
+                
+
+                    <div id="movie-item">
+                        <li>
+                            <span class="movie-title"><h4>The curse of La Llorona</h4></span>
+                        </li>
+                        <img id="img-poster" src="The Curse of La Llorona [DVD].jpg">
+                        
+                            <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-comment"></i></a>
+                    </div>
+
+                    <div id="movie-item">
+                        <li>
+                            <span class="movie-title"><h4>The Turning</h4></span>
+                        </li>
+                        <img id="img-poster" src="The Turning (2020) Horror, Drama, Mystery Movie - Directed by Floria Sigismondi.jpg">
+                         
+                        <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-comment"></i></a>
+                    </div>
+                </div>
+                <hr>  
+
+
+                
+                <div class="movie-genre">
+                    <h1>ACTION</h1>
+                    
+                    <div id="movie-item">
+                        <li>
+                            <span class="movie-title"><h4>Avengers End Game</h4></span>
+                        </li>
+                    <img id="img-poster" src="https://i.pinimg.com/564x/c4/6b/da/c46bdabc22943cb8f9208fb6638b7dc3.jpg" alt="ready or not movie poster">
+                     
+                         <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                         <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-comment"></i></a>
+                         
+                    </div>
+                         <div id="movie-item">
+                        <li>
+                            <span class="movie-title"><h4>Mulan</h4></span>
+                        </li>
+                            <img id="img-poster" src="Disney Live Action.png">
+                            
+                                <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-comment"></i></a>
+                           </div>
+          
+                           <div id="movie-item">
+                               <li>
+                                <span class="movie-title"><h4>The Fast and Furious 9</h4></span>
+                               </li>
+                            <img id="img-poster" src="FAST AND FURIOUS 9.jpg">
+                           
+                                <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-comment"></i></a>
+                           </div>
+                        
+                </div>
+                <hr>
+
+                <div class="movie-genre">
+                    <h1>ANIMATION</h1>
+                    
+                    <div id="movie-item">
+                        <li>
+                            <span class="movie-title"><h4>Toy Story 4</h4></span>
+                        </li>
+                    <img id="img-poster" src="https://i.pinimg.com/564x/87/67/62/876762fd194c754c63f7d615ce3e2f84.jpg">
+                     
+                         <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                         <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-comment"></i></a>
+                    </div>
+                         <div id="movie-item">
+                             <li>
+                                <span class="movie-title"><h4>Abominable</h4></span>
+                             </li>
+                            <img id="img-poster" src="123MOVieS_HD]! Watch Abominable 2019 Full Online Free Movies.jpg">
+                            
+                                <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                 <a href="#"><i class="fas fa-comment"></i></a>
+                           </div>
+
+                           <div id="movie-item">
+                               <li>
+                                <span class="movie-title"><h4>Spies In Disguise</h4></span>
+                               </li>
+                            <img id="img-poster" src="spiesindisguise.jpg">
+                            
+                            
+                                <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-comment"></i></a>
+                           </div>
+
+                     
+                    </div>
+
+                     <hr>
+
+                     <div class="movie-genre">
+                        <h1>ROMANCE</h1>
+                        
+                
+                        <div id="movie-item">
+                            <li>
+                                <span class="movie-title"><h4>To all the boys I've loved</h4></span>
+                            </li>
+                        <img id="img-poster" src="P_S.png">
+                        
+                             <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                             <a href="#"><i class="fas fa-heart"></i></a>
+                               <a href="#"><i class="fas fa-comment"></i></a>
+                            </div>
+                             <div id="movie-item">
+                                 <li>
+                                    <span class="movie-title"><h4>Crazy Rich Asians</h4></span>
+                                 </li>
+                                <img id="img-poster" src="Crazy Rich Asians.jpg">
+                               
+                                    <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                                    <a href="#"><i class="fas fa-heart"></i></a>
+                                     <a href="#"><i class="fas fa-comment"></i></a>
+                               </div>
+
+                               <div id="movie-item">
+                                   <li>
+                                    <span class="movie-title"><h4>All the bright places</h4></span>
+                                   </li>
+                                <img id="img-poster" src="all the bright places.jpg">
+                               
+                                    <button type="button" class="add-cart"><a href="#">Add to cart</a></button>
+                                    <a href="#"><i class="fas fa-heart"></i></a>
+                                    <a href="#"><i class="fas fa-comment"></i></a>
+                               </div>
+
+                         
+                         <hr>
+                 </div>
+            </ul>
+               </div>
+               
+            
+            </div>
 </body>
 </html>

@@ -2,14 +2,59 @@ body {
 margin: 0;
 padding: 0;
 width: 100%;
+background-image: url(tape.jpg);
+background-size: cover;
+background-position: 80%;
+background-attachment: fixed;
+opacity: 8;
 
 }
 .sign-up-form {
-    width: 300px;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    width: 400px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
     background: white;
     padding: 40px;
     margin: 8% auto 0;
     text-align: center; 
     position:  center;
+}
+.sign-up-form h1 {
+color: #1c8adb;
+margin-bottom: 30px;
+}
+.input-box {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    border: 1px solid #999;
+    outline: none;
+}
+button {
+    color: black;
+    width: 50%;
+    padding: 14px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: bolder;
+}
+
+button:hover {
+    opacity: 1;
+    background-color: mediumvioletred;
+}
+.sign {
+    background-color: #1c8adb;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
 }

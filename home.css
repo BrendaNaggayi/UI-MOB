@@ -1,7 +1,7 @@
 body, html {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
-    background-image: url(theatre.jpg);
+    background-image: url(tape.jpg);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -94,6 +94,13 @@ label #cancel{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    vertical-align: middle;
+    width: 100%;
+
 
 }
 #main{
@@ -105,3 +112,183 @@ label #cancel{
 .sidebar #bottom {
 color: white;
 }
+#search-bar{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    margin-right: 15px;
+    display: flex;
+}
+input{
+    border: 3px solid teal;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+}
+#search-btn{
+    color: teal;
+    float: right;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#search-bar:hover #search-btn{
+    color: white;
+}
+#search-text{
+    font-weight: bolder;
+    outline: none;
+    float: left;
+    font-size: 16px;
+    padding: 0;
+}
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.content-section {
+    margin: 1em;
+}
+
+.section-header {
+  font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #000;
+    display: flex;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+.cart-row{
+    display: flex;
+}
+
+.cart-item {
+    width: 3%;
+}
+
+
+.cart-quantity {
+    width: 20%;
+}
+.cart-item-title{
+    color: black;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger {
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-quantity {
+    color: black;
+    font-size: 1.1em;
+}
+
+.btn-borrow {
+    display: block;
+    margin: 20px auto 20px auto;
+    font-size: 1.5em;
+}
+
+
+
+
+
+.movies {
+margin: auto;
+text-align:center;
+display: block;
+padding-right: 50px;
+position: absolute;
+top: 10%;
+left: 15%;
+}
+  
+#img-poster{
+    width: 250px;
+    height: 350px;
+
+}
+.movie-genre {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+
+}
+
