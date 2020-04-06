@@ -1,0 +1,196 @@
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Baloo Thambi 2', cursive;
+    height: 100%;
+    background-image: url(tape.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    margin: 0;
+    margin: 0;
+    width: 100%;
+   
+}
+*{
+margin: 0;
+padding: 0;  
+list-style: none;
+text-decoration: none;
+}
+
+.sidebar{
+position: fixed;
+left: -300px;
+width: 300px;
+height: 100%;
+background: #000000;
+transition: all .3s ease-in;
+
+}
+.sidebar header{
+font-size: 22px;
+color: white;
+text-align: center;
+line-height: 70px;
+background: teal;
+user-select: none;
+}
+.sidebar ul a{
+display: block;
+height: 100%;
+width: 100%;
+line-height: 35px;
+font-size: 20px;
+color: white;
+padding-left: 40px;
+box-sizing: border-box;
+border-top: 1px solid rgba(255,255,255,.1);
+border-bottom: 1px solid black;
+transition: 4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background-color: mediumvioletred;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #042331;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+#container {
+    min-width: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100%;
+    vertical-align: middle;
+    width: 100%;
+
+}
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+    flex: 1 0 auto;
+}
+
+.sidebar #bottom {
+color: white;
+}
+
+#bottom{
+    font-size: 30px;
+}
+
+h1{
+    color: rgb(5, 37, 37);
+    font-size: 80px;
+    text-align: center;
+}
+#footer{
+    
+    background-color: black;
+    position: relative;
+    margin-top: 180px;
+    clear: both;
+}
+#social-media{
+    font-size: 30px;
+}
+
+#contact-info {
+    display: flex;
+    margin-top: 200px;
+    margin-right: 10px;
+    margin-left: 90px;;
+    padding-top: 40%;
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    flex-direction: row;
+   
+}
+#card {
+background:black;
+padding: 0 20px;
+margin: 0 10px;
+width: 290px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+cursor: pointer;
+
+}
+.card-icon{
+    font-size: 40px;
+    background: teal;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+#card:hover .card-icon {
+    background: none;
+    color: slateblue;
+}
+#card p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:800px) {
+    #contact-info{
+        flex-direction: column;
+        
+    }
+
+#card {
+    margin: 10px 0;
+}
+}

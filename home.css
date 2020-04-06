@@ -1,0 +1,378 @@
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Baloo Thambi 2', cursive;
+    height: 100%;
+    background-image: url(tape.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+}
+*{
+margin: 0;
+padding: 0;  
+list-style: none;
+text-decoration: none;
+}
+
+.sidebar{
+position: fixed;
+left: -250px;
+width: 250px;
+height: 100%;
+background: #000000;
+
+
+}
+.sidebar header{
+font-size: 22px;
+color: white;
+text-align: center;
+line-height: 70px;
+background: teal;
+user-select: none;
+}
+.sidebar ul a{
+display: block;
+height: 100%;
+width: 100%;
+line-height: 35px;
+font-size: 20px;
+color: white;
+padding-left: 40px;
+box-sizing: border-box;
+border-top: 1px solid rgba(255,255,255,.1);
+border-bottom: 1px solid black;
+transition: 4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background-color: mediumvioletred;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #042331;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+#container {
+    min-width: -100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    vertical-align: middle;
+    width: 100%;
+
+
+}
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+    flex: 1 0 auto;
+}
+.sidebar #bottom {
+    color: white;
+    }
+    
+    #bottom{
+        font-size: 30px;
+    }
+    
+    #footer{
+        
+        background-color: black;
+        position: relative;
+        margin-top: 180px;
+        clear: both;
+    }
+    #social-media{
+        font-size: 30px;
+    }
+    
+        h4 h3{
+        color: black;
+        }
+
+
+
+
+#search-bar{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    margin-right: 15px;
+    display: flex;
+}
+input{
+    border: 3px solid teal;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+}
+#search-btn{
+    color: teal;
+    float: right;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#search-bar:hover #search-btn{
+    color: white;
+}
+#search-text{
+    font-weight: bolder;
+    outline: none;
+    float: left;
+    font-size: 16px;
+    padding: 0;
+}
+
+
+.movies {
+margin: auto;
+text-align:center;
+display: flex;
+padding-right: 50px;
+position: absolute;
+top: 10%;
+left: 15%;
+}
+  
+.img-poster{
+    width: 250px;
+    height: 350px;
+    border: 3px solid teal;
+transition: width .45s ease-in-out;
+}
+
+
+button{
+    border-radius: 10px;
+    color: white;
+}
+.movie-genre {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+
+}
+
+.add-cart{
+  font-size: 25px; 
+  background-color: rgb(6, 72, 110); 
+  color: white;
+}
+.fas fa-heart{
+    font-size: 30px;
+    background-color: rgb(6, 72, 110); 
+}
+.fas fa-comment{
+    font-size: 40px;
+    background-color: rgb(6, 72, 110); 
+}
+button:hover .add-cart{
+    color:mediumvioletred;
+}
+.movie-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.movie-cart {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color:black;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 1900px;
+  
+
+}
+.cart-header {
+  font-weight: bold;
+  font-size: 20px;
+  color:black;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+
+.cart-quantity {
+  width: 20%;
+}
+
+.cart-item-title {
+  color:black;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 85px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: black;
+  background-color: rgb(100, 1, 20);
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-danger:hover {
+  background-color: teal;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: black;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-quantity {
+  color: black;
+  font-size: 1.1em;
+}
+
+.btn-borrow {
+  color: black;
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 40px;
+}
+.btn-borrow:hover {
+  background-color: teal;
+}
+
+
+#logout{
+  position: absolute;
+  top: 10%;
+  right: 65%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  margin-right: 15px;
+  display: flex;
+  
+}
+#logout-btn{
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px solid teal;
+  font-size: 20px;
+
+}
+#logout:hover {
+  color: teal;
+}
+#info{
+  display: none;
+}
+#comment{
+  color: black;
+  font-size: 30px;
+  border: 2px solid teal;
+}
+@media screen and (min-width:768px) {
+.movies{
+  flex-direction: column;
+}
+}
+input #example #sent {
+  border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    border-radius: 200px;
+}
